@@ -5,12 +5,12 @@ import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
 
-
 export const SocialMedia = () => {
   return (
     <div className={cn('flex flex-col items-start space-y-3 ')}>
       <Link
         href='https://github.com/ynori123'
+        target='_blank'
         className={cn('flex justify-center items-center space-x-1 hover:border-b border-black')}
         id='github'>
         <Github className={cn('w-6 h-6')} />
@@ -18,9 +18,10 @@ export const SocialMedia = () => {
       </Link>
 
       <Link
-        href='https://twitter.com/se4weed_jp'
+        href='https://x.com/se4weed_jp'
+        target='_blank'
         className={cn('flex justify-center items-center space-x-1 hover:border-b border-black')}
-        id='github'>
+        id='x'>
         <Twitter className={cn('w-6 h-6')} />
         <span>se4weed_jp</span>
       </Link>
