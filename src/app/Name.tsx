@@ -1,6 +1,8 @@
-import { cn } from '@/lib/utils';
 import React from 'react';
+
 import { Nokora } from 'next/font/google';
+
+import { cn } from '@/lib/utils';
 
 const nokora = Nokora({
   subsets: ['latin'],

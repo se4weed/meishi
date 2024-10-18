@@ -1,0 +1,8 @@
+# shadcn ui
+src/components/ui/*
+# config files
+tailwind.config.ts
+tsconfig.json
+.eslintrc.json
+# node_modules
+node_modules/*

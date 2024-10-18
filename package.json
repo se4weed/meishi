@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "eslint": "eslint './**/*.{ts,tsx}'",
+    "eslint:fix": "eslint --fix './**/*.{ts,tsx}'",
     "pret": "prettier './**/*.{ts,tsx}'",
     "pret:fix": "prettier --write './**/*.{ts,tsx}'"
   },
@@ -30,6 +32,9 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.15",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-unused-imports": "^4.1.3",
     "postcss": "^8",
     "prettier": "^3.3.3",
     "tailwindcss": "^3.4.1",

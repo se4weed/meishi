@@ -1,13 +1,15 @@
 'use client';
 import { useState } from 'react';
+
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
+
 import { Icon } from './Icon';
 import { Name } from './Name';
 import { SocialMedia } from './SocialMedia';
-import { Separator } from '@/components/ui/separator';
-import { Button } from '@/components/ui/button';
 
-export default function Home() {
+const Home = () => {
   const [isMeishi, setIsMeishi] = useState(false);
 
   return (
@@ -28,4 +30,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;

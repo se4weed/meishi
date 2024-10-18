@@ -1,3 +1,75 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "rules": {
+    // 未使用のimportを削除
+    "unused-imports/no-unused-imports": "error",
+    // 未使用の変数を警告し、自動的に削除
+    "unused-imports/no-unused-vars": [
+      "error",
+      {
+        "vars": "all", // すべての変数をチェック
+        "varsIgnorePattern": "^_", // "_" で始まる変数は無視
+        "args": "after-used", // 使用されていない引数をチェック
+        "argsIgnorePattern": "^_" // "_" で始まる引数は無視
+      }
+    ],
+    // importの並び順
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "pathGroups": [
+          {
+            "pattern": "react**",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@material-ui/**",
+            "group": "external",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "react"
+        ]
+      }
+    ],
+    // React関連のルール設定
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ]
+  },
+  "plugins": [
+    "import",
+    "unused-imports",
+    "@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
 }

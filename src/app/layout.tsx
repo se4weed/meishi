@@ -1,6 +1,9 @@
+import React from 'react';
+
 import type { Metadata } from 'next';
 import './globals.css';
 import Image from 'next/image';
+
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
@@ -8,11 +11,11 @@ export const metadata: Metadata = {
   description: 'のり の即席名刺',
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
     <html lang='jp'>
       <body>
@@ -28,4 +31,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
