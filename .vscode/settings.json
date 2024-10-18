@@ -1,0 +1,45 @@
+{
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/page.tsx": "${dirname} - Page",
+    "**/app/**/layout.tsx": "${dirname} - Layout",
+    "**/components/**/index.tsx": "${dirname} - Component"
+  },
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "diffEditor.maxComputationTime": 0,
+  "settingsSync.ignoredExtensions": [],
+  "editor.codeActionsOnSave": [
+    { "source.fixAll.eslint": "explicit" },
+    "source.addMissingImports",
+    "source.fixAll.eslint"
+  ],
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "html.format.contentUnformatted": ""
+}
