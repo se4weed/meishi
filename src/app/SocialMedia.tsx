@@ -9,12 +9,12 @@ export const SocialMedia = () => {
   return (
     <div className={cn('flex flex-col items-start space-y-3 ')}>
       <Link
-        href='https://github.com/ynori123'
+        href='https://github.com/se4weed'
         target='_blank'
         className={cn('flex justify-center items-center space-x-1 hover:border-b border-black')}
         id='github'>
         <Github className={cn('w-6 h-6')} />
-        <span>ynori123</span>
+        <span>se4weed</span>
       </Link>
 
       <Link
